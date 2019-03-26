@@ -180,15 +180,34 @@
 /*
  * Create the function factorial here
  */
-function factorial(input){
-    let i;
-    let product=1;
-    for (i=input;i>0;i--){
-        product*=i;
-        console.log(product);
+// function factorial(input){
+//     function factorial(n) {
+//         let product = n;
+//         while (n-- > 1) {
+//             product *= n;
+//         }
+//         return product;
+//     }
+// }
+// factorial(14);
+// **************** fifth one
+
+function vowelsAndConsonants(input) {
+    let vowels = "";
+    let consonants = "";
+    for (const letter of input) {
+        if (letter == "a" ||letter == "e" ||letter == "i" ||letter == "o" ||letter == "u") {
+            vowels += letter;
+        }else{
+            consonants += letter;
+        }
+    }
+    for (let i = 0; i < vowels.length; i++) {
+        console.log(vowels.charAt(i));
+    }
+    for (const letter of consonants.split('')) {
+        console.log(letter);
     }
 }
-factorial(14);
-// for (i=0;i<n;i++){
-//     console.log(i);
-// }
+
+vowelsAndConsonants("javascriptloops");
