@@ -96,25 +96,6 @@
 //     }
 // }
 // factorial(14);
-// **************** fifth one
-
-// function vowelsAndConsonants(input) {
-//     let vowels = "";
-//     let consonants = "";
-//     for (const letter of input) {
-//         if (letter == "a" ||letter == "e" ||letter == "i" ||letter == "o" ||letter == "u") {
-//             vowels += letter;
-//         }else{
-//             consonants += letter;
-//         }
-//     }
-//     for (let i = 0; i < vowels.length; i++) {
-//         console.log(vowels.charAt(i));
-//     }
-//     for (const letter of consonants.split('')) {
-//         console.log(letter);
-//     }
-// }
 
 // Objective
 
@@ -145,12 +126,12 @@
 //     return re;
 // }
 
-// function reverseString(s) {
-//     try{
-//         s = s.split('').reverse().join('')
-//     }catch(err){
-//         console.log(err.message);
-//     }finally{
-//         console.log(s);
-//     }
-// }
+function circle(r) {
+    // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
+    // let r = readLine();
+    const PI = Math.PI;
+    // Print the area of the circle:
+    console.log(PI*r*r)
+    // Print the perimeter of the circle:
+    console.log(2*PI * r )
+}
