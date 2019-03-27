@@ -1,29 +1,5 @@
 // **************** first one
 
-// 'use strict';
-
-// process.stdin.resume();
-// process.stdin.setEncoding('utf-8');
-
-// let inputString = '';
-// let currentLine = 0;
-
-// process.stdin.on('data', inputStdin => {
-//     inputString += inputStdin;
-// });
-
-// process.stdin.on('end', _ => {
-//     inputString = inputString.trim().split('\n').map(string => {
-//         return string.trim();
-//     });
-    
-//     main();    
-// });
-
-// function readLine() {
-//     return inputString[currentLine++];
-// }
-
 // /**
 // *   A line of code that prints "Hello, World!" on a new line is provided in the editor. 
 // *   Write a second line of code that prints the contents of 'parameterVariable' on a new line.
@@ -39,29 +15,6 @@
     
 // }
 // *********************************second one 
-// 'use strict';
-
-// process.stdin.resume();
-// process.stdin.setEncoding('utf-8');
-
-// let inputString = '';
-// let currentLine = 0;
-
-// process.stdin.on('data', inputStdin => {
-//     inputString += inputStdin;
-// });
-
-// process.stdin.on('end', _ => {
-//     inputString = inputString.trim().split('\n').map(string => {
-//         return string.trim();
-//     });
-    
-//     main();    
-// });
-
-// function readLine() {
-//     return inputString[currentLine++];
-// }
 
 // /**
 // *   The variables 'firstInteger', 'firstDecimal', and 'firstString' are declared for you -- do not modify them.
@@ -96,32 +49,7 @@
 //     console.log(firstString + secondString)
 // }
 
-// performOperation(12,4,"is crappy");
-
 // ++++++++++++++++++++++++++++++++third one
-// 'use strict';
-
-// process.stdin.resume();
-// process.stdin.setEncoding('utf-8');
-
-// let inputString = '';
-// let currentLine = 0;
-
-// process.stdin.on('data', inputStdin => {
-//     inputString += inputStdin;
-// });
-
-// process.stdin.on('end', _ => {
-//     inputString = inputString.trim().split('\n').map(string => {
-//         return string.trim();
-//     });
-    
-//     main();    
-// });
-
-// function readLine() {
-//     return inputString[currentLine++];
-// }
 // /**
 // *   Calculate the area of a rectangle.
 // *
@@ -154,29 +82,7 @@
 // getArea(3,4.5);
 // getPerimeter(3,4.5);
 // ++++++++++++++++++++++++++++++++fourth one
-// 'use strict';
 
-// process.stdin.resume();
-// process.stdin.setEncoding('utf-8');
-
-// let inputString = '';
-// let currentLine = 0;
-
-// process.stdin.on('data', inputStdin => {
-//     inputString += inputStdin;
-// });
-
-// process.stdin.on('end', _ => {
-//     inputString = inputString.trim().split('\n').map(string => {
-//         return string.trim();
-//     });
-    
-//     main();    
-// });
-
-// function readLine() {
-//     return inputString[currentLine++];
-// }
 /*
  * Create the function factorial here
  */
@@ -192,22 +98,59 @@
 // factorial(14);
 // **************** fifth one
 
-function vowelsAndConsonants(input) {
-    let vowels = "";
-    let consonants = "";
-    for (const letter of input) {
-        if (letter == "a" ||letter == "e" ||letter == "i" ||letter == "o" ||letter == "u") {
-            vowels += letter;
-        }else{
-            consonants += letter;
-        }
-    }
-    for (let i = 0; i < vowels.length; i++) {
-        console.log(vowels.charAt(i));
-    }
-    for (const letter of consonants.split('')) {
-        console.log(letter);
-    }
-}
+// function vowelsAndConsonants(input) {
+//     let vowels = "";
+//     let consonants = "";
+//     for (const letter of input) {
+//         if (letter == "a" ||letter == "e" ||letter == "i" ||letter == "o" ||letter == "u") {
+//             vowels += letter;
+//         }else{
+//             consonants += letter;
+//         }
+//     }
+//     for (let i = 0; i < vowels.length; i++) {
+//         console.log(vowels.charAt(i));
+//     }
+//     for (const letter of consonants.split('')) {
+//         console.log(letter);
+//     }
+// }
 
-vowelsAndConsonants("javascriptloops");
+// Objective
+
+// In this challenge, we use a Regular Expression to evaluate a string. Check out the attached tutorial for more details.
+
+// Task
+
+// Complete the function in the editor below by returning a RegExp object, , that matches any string  that begins and ends with the same vowel. Recall that the English vowels are a, e, i, o, and u.
+
+// Constraints
+
+// The length of string  is  .
+// String  consists of lowercase letters only (i.e., [a-z]).
+// Output Format
+
+// The function must return a RegExp object that matches any string  beginning with and ending in the same vowel.
+
+// function regexVar() {
+//     /*
+//      * Declare a RegExp object variable named 're'
+//      * It must match a string that starts and ends with the same vowel (i.e., {a, e, i, o, u})
+//      */
+//     let re = /^(a|e|i|o|u).*\1$/
+    
+//     /*
+//      * Do not remove the return statement
+//      */
+//     return re;
+// }
+
+// function reverseString(s) {
+//     try{
+//         s = s.split('').reverse().join('')
+//     }catch(err){
+//         console.log(err.message);
+//     }finally{
+//         console.log(s);
+//     }
+// }
