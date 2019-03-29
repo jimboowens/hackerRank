@@ -14,3 +14,18 @@
 //         : a < 0 ? "Negative Error"
 //         : "Zero Error";  
 // }
+
+function getSecondLargest(nums) {
+    let largest=0;
+    let secondLargest;
+    for(const i of nums){
+        if (i>largest){
+            secondLargest=largest;
+            largest=i;
+            continue;
+        } else if (i<largest && i > secondLargest){
+            secondLargest=i;
+        }
+    }
+    return secondLargest;
+}
