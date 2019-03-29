@@ -8,3 +8,9 @@
 //         console.log(s);
 //     }
 // }
+
+// function isPositive(a) {
+//     return a > 0 ? "YES"
+//         : a < 0 ? "Negative Error"
+//         : "Zero Error";  
+// }
