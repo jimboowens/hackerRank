@@ -21,11 +21,11 @@
  * 2. A 'perimeter' method that returns the sum of the Polygon's side lengths.
  */
 
-class Polygon {
-    constructor(sides) {
-        this.sides = sides
-    }
-    perimeter() {
-        return this.sides.reduce((a, b)=>{ return a + b; })
-    }
-}
+// class Polygon {
+//     constructor(sides) {
+//         this.sides = sides
+//     }
+//     perimeter() {
+//         return this.sides.reduce((a, b)=>{ return a + b; })
+//     }
+// }
