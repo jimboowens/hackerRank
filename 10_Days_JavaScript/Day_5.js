@@ -109,3 +109,8 @@ function sides(literals, ...expressions) {
     return ([s2, s1]);
 }
 
+
+
+function modifyArray(nums) {
+    return nums.map(i => i = i%2 ? i*3: i*2);   
+}
