@@ -7,4 +7,5 @@ btn.className = "btnClass";
 document.body.appendChild(btn);
 
 btn.onclick = function() {
- 
+    btn.innerHTML++;
+}
