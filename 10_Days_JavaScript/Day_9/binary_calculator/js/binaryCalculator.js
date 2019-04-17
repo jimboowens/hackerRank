@@ -20,29 +20,29 @@ let elem = document.getElementById("res");
        }
   }  
   
-  function clickDifference() {
+  function clickSub() {
     if(elem.innerHTML.length!=0 && !checkOperator()){
         elem.innerHTML +='-';
        }
   }
 
-  function clickMultiply() {
+  function clickMul() {
     if(elem.innerHTML.length!=0 && !checkOperator()){
         elem.innerHTML +="*";
        }
   }
 
-  function clickDivide() {
+  function clickDiv() {
     if(elem.innerHTML.length!=0 && !checkOperator()){
         elem.innerHTML +="/";
       }
   }
 
-  function clickClear() {
+  function clickClr() {
     elem.innerHTML = '';
   }
 
-  function clickEqual() {
+  function clickEql() {
     if(!checkOperator()) {
       let re = /\d+/g
       let re2 = /[\+\-\*\/]+/g
@@ -77,6 +77,6 @@ let elem = document.getElementById("res");
       }
       elem.innerHTML = numbers[0].toString(2);
     } else {
-      elem.innerHTML="invalid input."
+      alert("Line must ends with number.")
     }
   }
